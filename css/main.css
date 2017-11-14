@@ -54,10 +54,7 @@ nav a {
   
   transition:all 0.5s ease;
 }
-nav a:hover{
-border-bottom:3px solid #da9807;
 
-}
 nav:hover a:not(:hover){
   color:#997217!important;
   -webkit-transition:all .5s ease-all;
@@ -275,8 +272,29 @@ img {
     
 }
 .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
-    border: none;
+    border: none!important;
     background: #d1a93d;
+}
+
+.headroom {
+    will-change: transform;
+    -webkit-transition: -webkit-transform 200ms linear;
+    transition: -webkit-transform 200ms linear;
+    transition: transform 200ms linear;
+    transition: transform 200ms linear, -webkit-transform 200ms linear;
+}
+
+.headroom--pinned {
+    display: block;
+        -webkit-transform: translateY(0%);
+        transform: translateY(0%);
+
+}
+.headroom--unpinned {
+    display: none;
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%);
+
 }
 
 @media all and (max-width:465px) {
