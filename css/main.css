@@ -36,27 +36,35 @@ a {
     outline: none;
 }
 
-a {
-    color: #da9807;
-    font-size: calc(16px + .25vw);
-    line-height: 1.8;
-    text-transform: uppercase;
-    font-weight: 500;
-    width: 85%;
-    -webkit-transition: all .2s linear;
-    transition: all .2s linear;
-}
-
 a,
 a:hover,
 a:active {
     text-decoration: none;
 }
 
-a:hover {
-    color: #000;
-    font-weight: 400;
+nav a {
+    color: #da9807!important;
+    font-size: calc(16px + .25vw);
+    line-height: 1.8;
+    text-transform: uppercase;
+    font-weight: 500;
+    width: 85%;
+  
+  -webkit-transition:all 0.5s ease;
+  
+  transition:all 0.5s ease;
 }
+nav a:hover{
+border-bottom:3px solid #da9807;
+
+}
+nav:hover a:not(:hover){
+  color:#997217!important;
+  -webkit-transition:all .5s ease-all;
+  transition:all .5s ease-all;
+}
+
+
 
 .col-lg-1,
 .col-lg-10,
