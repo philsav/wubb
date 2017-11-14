@@ -274,6 +274,10 @@ img {
     margin-bottom: 0;
     
 }
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+    border: none;
+    background: #d1a93d;
+}
 
 @media all and (max-width:465px) {
     nav ul {
