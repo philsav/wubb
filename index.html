@@ -33,7 +33,7 @@
         <![endif]-->
 
 
-    <header>
+    <header class="headroom">
 
         <div class="container">
 
@@ -63,7 +63,7 @@
             </div>
             <div class="col-sm-5 main-carousel">
                 <div class="carousel-cell"><img src="img/desc.jpg" alt=""></div>
-                <div class="carousel-cell"><img src="img/desc.jpg" alt=""></div>
+                <div class="carousel-cell"><img src="img/linux.jpg" alt=""></div>
                 <div class="carousel-cell"><img src="img/desc.jpg" alt=""></div>
 
             </div>
@@ -200,6 +200,16 @@
                 });
         </script>
 
+       
+       <script src="js/headroom.js"></script>
+       <script>
+     // grab an element
+var myElement = document.querySelector("header");
+// construct an instance of Headroom, passing the element
+var headroom  = new Headroom(myElement);
+// initialise
+headroom.init(); 
+        </script>
         <script src="js/main.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
