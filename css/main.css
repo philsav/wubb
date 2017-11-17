@@ -28,6 +28,8 @@ body {
 .container {
     background: #fff;
     padding: 0;
+    width:100%;
+    max-width: 1360px;
 }
 
 *,
@@ -195,8 +197,8 @@ header {
 }
 
 #logo img {
-    height: 150px;
-    line-height: 150px;
+    height: 120px;
+    line-height: 100px;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
 }
@@ -233,7 +235,7 @@ li{
     -webkit-box-flex: 1;
     -ms-flex-positive: 1;
     flex-grow: 1;
-    text-align: right;
+    text-align: center;
 }
 #logo h1{
     text-align: left;
@@ -297,10 +299,13 @@ img {
 
 }
 
-@media all and (max-width:465px) {
+@media all and (max-width:768px) {
     nav ul {
 -ms-flex-wrap: wrap;
 flex-wrap: wrap;
+    }
+    #logo{
+        padding: 0px 0 10px;
     }
         nav ul li:first-child{
             width: 100%;
@@ -314,5 +319,16 @@ flex-wrap: wrap;
 }
     .main{
         padding: 0px;
+    }
+    #logo img {
+    height: 100px;
+    }
+}
+@media all and (max-width:500px) {
+    nav ul{
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: column;
     }
 }
