@@ -13,8 +13,23 @@
     </title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-
+<link rel="apple-touch-icon" sizes="57x57" href="img/icons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="img/icons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="img/icons/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="img/icons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="img/icons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="img/icons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="img/icons/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="img/icons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="img/icons/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="img/icons/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="img/icons/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="img/icons/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 
@@ -33,53 +48,53 @@
         <![endif]-->
 
 
-    <header class="cd-header headroom">
-
-        <div class="container">
+    <header id="header" class="header headroom">      
 
             <nav>
+                <h1 id="logo">
+                    <a href="">
+                        <img src="img/logoII.png" alt="Wubb Coin"></a>
+                </h1>
+                    <a href="" class="toggleNav"><img src="img/menu.png" alt=""> Menu</a>
+
                 <ul>
-                    <li id="logo">
-                        <h1>
-                            <a href="">
-                                <img src="img/logoII.png" alt="Wubb Coin"></a>
-                        </h1>
-                    </li>
-                    <li><a href="">About</a></li>
-                    <li><a href="#buy">Wallets</a></li>
-                    <li><a href="#spend">EXChanges</a></li>
+                    <li><a href="#wallets">Wallets</a></li>
+                    <li><a href="#exchanges">EXChanges</a></li>
                     <li><a href="#faq">FAQ</a></li>
+                <li><a href="#other">About</a></li>
+
                 </ul>
             </nav>
-        </div>
+       
     </header>
 
     <div class="container main">
-        <div class="section about" id="about">
+        <div class="section about grey" id="about">
 
             <div class="col-sm-7">
                 <h2>About</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In itaque repellendus, ipsa cumque voluptates! Possimus quia assumenda atque, nam voluptatibus distinctio consectetur exercitationem ut consequatur illo tempore repudiandae corporis illum!</p>
             </div>
             <div class="col-sm-5 main-carousel">
-                <div class="carousel-cell"><img src="img/desc.jpg" alt=""></div>
-                <div class="carousel-cell"><img src="img/linux.jpg" alt=""></div>
-                <div class="carousel-cell"><img src="img/desc.jpg" alt=""></div>
-
+                <div class="carousel-cell">
+                <img src="img/desc.jpg" alt="">
+                </div>     
             </div>
-
-        </div><br/><br/>
+            
+        </div>
+        
         <div class="clearfix"></div>
-        <div class="section wallet" id="wallet">
+        
+        <div class="section wallets white" id="wallets">
             <div class="col-sm-12">
-                <h2>Wallet</h2><br/>
+                <h2>Wallets</h2><br/>
 
-
-                <img src="img/wallets.jpg" alt=""> </div>
+                <img class="img" src="img/wallets.jpg" alt=""></div>
+            </div>
 
             <div class="clearfix"></div>
 
-            <div class="section exchanges" id="exchanges">
+            <div class="section exchanges grey" id="exchanges">
                 <div class="col-sm-7">
                     <h2>Exchanges</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In itaque repellendus, ipsa cumque voluptates! Possimus quia assumenda atque, nam voluptatibus distinctio consectetur exercitationem ut consequatur illo tempore repudiandae corporis illum!</p>
@@ -87,8 +102,10 @@
                 <div class="col-sm-5"><img src="img/desc.jpg" alt=""></div>
 
             </div>
+            
             <div class="clearfix"></div>
-            <div class="section faq" id="faq">
+            
+            <div class="section faq white" id="faq">
                 <div class="col-sm-12">
                     <h2>FAQ</h2><br/>
                     <div id="accordion">
@@ -131,29 +148,12 @@
             </div>
             <div class="clearfix"></div>
 
-            <div class="section footer">&copy; Copyright 2017 Wubb Coin. All rights reserved. <span id="stop" class="scrollTop"><img src="img/arrow.png" alt=""></span></div>
-        </div>
-
-
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script>
-            window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
-        </script>
-
-        <script src="js/vendor/bootstrap.min.js"></script>
-
+            <div class="section footer white">&copy; Copyright 2017 Wubb Coin. All rights reserved. <span id="stop" class="scrollToTop"><img src="img/arrow.png" alt=""></span></div>
+        </div> 
+ 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
-        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-        <script>
-            $('.main-carousel').flickity({
-                // options
-                cellAlign: 'left',
-                contain: true,
-                autoPlay: true,
-                draggable: true
-            });
-        </script>
+        <script src="js/vendor/bootstrap.min.js"></script>
 
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
         <script>
@@ -162,53 +162,15 @@
             });
         </script>
 
+        <script src="js/headroom.js"></script>
+        
         <script>
-            // Select all links with hashes
-            $('a[href*="#"]')
-                // Remove links that don't actually link to anything
-                .not('[href="#"]')
-                .not('[href="#0"]')
-                .click(function(event) {
-                    // On-page links
-                    if (
-                        location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
-                        location.hostname == this.hostname
-                    ) {
-                        // Figure out element to scroll to
-                        var target = $(this.hash);
-                        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                        // Does a scroll target exist?
-                        if (target.length) {
-                            // Only prevent default if animation is actually gonna happen
-                            event.preventDefault();
-                            $('html, body').animate({
-                                scrollTop: target.offset().top + 500
-                            }, 1000, function() {
-                                // Callback after animation
-                                // Must change focus!
-                                var $target = $(target);
-                                $target.focus();
-                                if ($target.is(":focus")) { // Checking if the target was focused
-                                    return false;
-                                } else {
-                                    $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
-                                    $target.focus(); // Set focus again
-                                };
-                            });
-                        }
-                    }
-                });
-        </script>
-
-       
-       <script src="js/headroom.js"></script>
-       <script>
-     // grab an element
-var myElement = document.querySelector("header");
-// construct an instance of Headroom, passing the element
-var headroom  = new Headroom(myElement);
-// initialise
-headroom.init(); 
+            // grab an element
+            var myElement = document.querySelector("header");
+            // construct an instance of Headroom, passing the element
+            var headroom  = new Headroom(myElement);
+            // initialise
+            headroom.init(); 
         </script>
         <script src="js/main.js"></script>
 
