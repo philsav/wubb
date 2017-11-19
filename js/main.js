@@ -1,3 +1,4 @@
+//header shrink
 $(function(){
  var shrinkHeader = 150;
   $(window).scroll(function() {
@@ -15,39 +16,67 @@ function getCurrentScroll() {
 });
 
 
-///scroll top
-// BY KAREN GRIGORYAN
+//scrolltop
+$(document).ready(function(){
+	
+	//Check to see if the window is top if not then display button
+	$(window).scroll(function(){
+		if ($(this).scrollTop() > 100) {
+			$('.scrollToTop').fadeIn();
+		} else {
+			$('.scrollToTop').fadeOut();
+		}
+	});
+	
+	//Click event to scroll to top
+	$('.scrollToTop').click(function(){
+		$('html, body').animate({scrollTop : 0},800);
+		return false;
+	});
+	
+});
 
-$(document).ready(function() {
-  /******************************
-      BOTTOM SCROLL TOP BUTTON
-   ******************************/
+///headroom
+var headroom = new Headroom(header, {
+  "offset": 205,
+  "tolerance": 5,
+  "classes": {
+    "initial": "animated",
+    "pinned": "slideDown",
+    "unpinned": "slideUp"
+  }
+});
+headroom.init();
 
-  // declare variable
-  var scrollTop = $(".scrollTop");
+// to destroy
+headroom.destroy();
+//toggle
+$(function(){
+$('.toggleNav').on('click',function(event){
+    event.preventDefault();
+    $('nav ul').toggleClass('open');                
+    });
+});
 
-  $(window).scroll(function() {
-    // declare variable
-    var topPos = $(this).scrollTop();
+//scrollto
+$(document).ready(function(){
+	$('a[href^="#"]').on('click',function (e) {
+	    e.preventDefault();
 
-    // if user scrolls down - show scroll to top button
-    if (topPos > 100) {
-      $(scrollTop).css("opacity", "1");
+	    var target = this.hash;
+	    var $target = $(target);
 
-    } else {
-      $(scrollTop).css("opacity", "0");
-    }
+	    $('html, body').stop().animate({
+	        'scrollTop': $target.offset().top
+	    }, 900);
+	});
+});
 
-  }); // scroll END
+//padding
+$(function(){
 
-  //Click event to scroll to top
-  $(scrollTop).click(function() {
-    $('html, body').animate({
-      scrollTop: 0
-    }, 800);
-    return false;
-
-  }); // click() scroll top EMD
-
-  
+ var hh = $('.header').height(); 
+    
+    $('body').css('padding-top',hh);
+    
 });
