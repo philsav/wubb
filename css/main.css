@@ -267,9 +267,7 @@ img {
 .smaller #logo img {
     height: 100px;
 }
-.smaller ul{
-    height: 100px;
-}
+
 .footer{
     font-size: 14px;
     border-top:1px solid #ebebeb;
