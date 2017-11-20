@@ -21,8 +21,7 @@ body {
     color: #444;
     max-width: 100vw;
     overflow-x: hidden;
-    background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #f2f2f5), color-stop(50%, #fff), to(#f2f2f5));
-    background-image: linear-gradient(90deg, #f2f2f5 0, #fff 50%, #f2f2f5);
+    background:#444;
 }
 
 .container {
@@ -265,6 +264,10 @@ img {
 
 
 .smaller #logo img {
+    height: 100px;
+}
+
+.smaller nav ul{
     height: 100px;
 }
 
