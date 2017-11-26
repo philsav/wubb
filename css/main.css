@@ -170,7 +170,7 @@ h3 {
 }
 
 .btn {
-    width: 300px;
+    width: 220px;
     height: 50px;
     text-align: center;
     position: relative;
@@ -322,7 +322,7 @@ img {
 .footer {
     font-size: 14px;
     border-top: 1px solid #ebebeb;
-    padding-bottom: 15px;
+    padding: 30px;
     margin-bottom: 0;
     background: #ebebeb;
 }
@@ -426,6 +426,9 @@ html .ui-button.ui-state-disabled:active {
 }
 
 @media all and (max-width:768px) {
+    .banner{
+        height: 300px
+    }
     h2 {
         padding: 15px 0px
     }
@@ -460,6 +463,9 @@ html .ui-button.ui-state-disabled:active {
 }
 
 @media all and (max-width:500px) {
+     .banner{
+        height: 200px
+    }
     header {
         padding: 2px;
     }
