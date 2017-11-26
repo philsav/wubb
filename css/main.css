@@ -322,7 +322,7 @@ img {
 .footer {
     font-size: 14px;
     border-top: 1px solid #ebebeb;
-    padding-bottom: 15px;
+    padding: 30px;
     margin-bottom: 0;
     background: #ebebeb;
 }
