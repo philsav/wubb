@@ -252,7 +252,7 @@ header {
     z-index: 999;
     -webkit-transition: height 0.3s;
     transition: height 0.3s;
-    padding: 5px 5px 0 10px;
+    padding: 2px 5px 2px 10px;
 }
 
 #logo img {
@@ -263,7 +263,7 @@ header {
 }
 
 nav ul {
-    height: 100px;
+    height: 93px;
     display: -webkit-box;
     display: -ms-flexbox;
     list-style: none;
@@ -316,7 +316,7 @@ img {
 }
 
 .smaller nav ul {
-    height: 35px;
+    height: 70px;
 }
 
 .footer {
