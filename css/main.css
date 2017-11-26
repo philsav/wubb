@@ -369,9 +369,7 @@ img {
 -ms-flex-wrap: wrap;
 flex-wrap: wrap;
     }
-   #logo{
-        float: none
-    }
+  
    nav ul {
        float: none;
 padding: 10px;
@@ -394,8 +392,15 @@ padding: 10px;
     #logo img {
     height: 100px;
     }
+    #logo{
+        float:none;
+    }
 }
 @media all and (max-width:500px) {
+     #logo{
+width: 200px;
+         
+    }
     nav ul{
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
@@ -419,10 +424,21 @@ padding: 10px;
         display: block;
         width: 100vw;
     }
+    #logo {
+    width: 140px;
+}
+     #logo img {
+    height: 70px;
+    }
+    
     .toggleNav{
-    display: block;
-        text-align: center;
-        width: 100%;
+display: inline-block;
+right: 0;
+        top: 20px;
+        width: 70px;
+        width: 70px;
+        position: absolute
+       
 }
     nav ul{
         display: none;
