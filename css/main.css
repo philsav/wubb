@@ -206,14 +206,14 @@ header {
 }
 
 #logo img {
-    height: 120px;
+    height: 100px;
     line-height: 100px;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
 }
 
 nav ul {
-    height:120px;
+    height:100px;
     display: -webkit-box;
     display: -ms-flexbox;
     list-style: none;
@@ -264,11 +264,11 @@ img {
 
 
 .smaller #logo img {
-    height: 100px;
+    height: 75px;
 }
 
 .smaller nav ul{
-    height: 100px;
+    height: 75px;
 }
 
 .footer{
