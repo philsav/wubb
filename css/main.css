@@ -330,7 +330,11 @@ img {
 }
 .footer a{
     color:#444!important;
+    font-weight: 600;
 } 
+.footer a:hover{
+    text-decoration: underline;
+}
 .ui-state-active,
 .ui-widget-content .ui-state-active,
 .ui-widget-header .ui-state-active,
