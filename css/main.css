@@ -324,11 +324,13 @@ img {
 .footer {
     font-size: 14px;
     border-top: 1px solid #ebebeb;
-    padding: 20px 30px 40px;
+    padding: 20px 30px 60px;
     margin-bottom: 0;
     background: #ebebeb;
 }
-
+.footer a{
+    color:#444!important;
+} 
 .ui-state-active,
 .ui-widget-content .ui-state-active,
 .ui-widget-header .ui-state-active,
