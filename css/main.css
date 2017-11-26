@@ -168,7 +168,7 @@ h3 {
 .icon-text {
     color: #2a8e79;
     font-size:20px;
-    padding-top: 15px;
+    padding: 15px 0 0 0;
 }
 
 .btn {
