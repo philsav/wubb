@@ -154,7 +154,7 @@ h2 {
     font-size: calc(1.3em + .2vw);
     font-weight: 700;
     line-height: 1.3;
-    padding: 0em;
+    padding: 0 0 30px;
 }
 
 h3 {
