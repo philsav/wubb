@@ -187,23 +187,23 @@ h3 {
 }
 
 .banner {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    align-items: center;
-    vertical-align: middle;
-    background: url(../img/banner.jpg);
+	background: #bdbdbd;
+	position: fixed;
+    margin-top: -110px;
+	width: 100%;
+	z-index: 10;
+    background: url(../img/banner.jpg);	
     background-size: cover;
-    height: 450px;
+    height: 570px;
+}
+.content{
+     width: 100%;
+	position: relative;
+	top: 450px;
+	background: #ebebeb;
+	height: 1500px;
+     z-index: 99;
+    
 }
 
 .icons {
@@ -433,8 +433,11 @@ html .ui-button.ui-state-disabled:active {
 }
 
 @media all and (max-width:768px) {
+    .content {
+    top: 230px;
+    }
     .banner{
-        height: 300px
+        height: 350px
     }
     h2 {
         padding: 15px 0px
@@ -470,8 +473,11 @@ html .ui-button.ui-state-disabled:active {
 }
 
 @media all and (max-width:500px) {
+     .content {
+    top: 160px;
+    }
      .banner{
-        height: 200px
+        height: 350px;
     }
     header {
         padding: 2px;
