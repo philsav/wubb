@@ -43,7 +43,7 @@ a:active {
 }
 
 nav a {
-    color: #da9807!important;
+    color: #54514c!important;
     font-size: calc(16px + .25vw);
     line-height: 1.8;
     text-transform: uppercase;
@@ -135,7 +135,7 @@ h3,
 h4,
 h5,
 h6 {
-    color: #da9807;
+    color: #54514c;
     font-family: 'Fira Sans', sans-serif;
     text-align: center;
 }
@@ -244,7 +244,7 @@ svg#Capa_1 {
 }
 
 header {
-    background: #fff;
+    background: rgba(255,255,255,0.9);
     width: 100%;
     -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
