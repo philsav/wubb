@@ -1,6 +1,7 @@
 /* ==========================================================================
    Author's custom styles
-   ========================================================================== */
+
+========================================================================== */
 
 * {
     -o-box-sizing: border-box;
@@ -326,7 +327,7 @@ img {
     border-top: 1px solid #ebebeb;
     padding: 20px 30px 60px;
     margin-bottom: 0;
-    background: #ebebeb;
+    background: #fff;
 }
 .footer a{
     color:#444!important;
