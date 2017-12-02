@@ -44,11 +44,10 @@ a:active {
 }
 
 nav a {
-    color: #54514c!important;
-    font-size: calc(16px + .25vw);
+    color: #216348!important;
+    font-size: calc(14px + .25vw);
     line-height: 1.8;
     text-transform: uppercase;
-    font-weight: 500;
     width: 85%;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
@@ -172,6 +171,11 @@ h3 {
     padding: 15px 0px 30px 0px;
 }
 
+.center{
+    text-align: center;
+    display: block;
+    padding-top: 10px;
+}
 .btn {
     width: 220px;
     height: 50px;
