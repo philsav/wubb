@@ -490,6 +490,9 @@ html .ui-button.ui-state-disabled:active {
 }
 
 @media all and (max-width:500px) {
+    .icons img{
+        width: 90px;
+    }
      .content {
     top: 160px;
     }
