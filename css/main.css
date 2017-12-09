@@ -164,7 +164,9 @@ h3 {
 .code {
     padding-bottom: 30px;
 }
-
+.wallet-icons{
+    padding: 10px 0 20px 0px;
+}
 .icon-text {
     color: #2a8e79;
     font-size:20px;
@@ -331,10 +333,14 @@ img {
     border-top: 1px solid #ebebeb;
     padding: 20px 30px 60px;
     margin-bottom: 0;
-    background: #fff;
+    color: #fff;
+    background: #343434;
+}
+.footer select{
+    color: #444;
 }
 .footer a{
-    color:#444!important;
+    color:#fff!important;
 } 
 .footer a:hover{
     text-decoration: underline;
